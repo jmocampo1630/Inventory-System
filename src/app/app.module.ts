@@ -20,6 +20,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { AuthGuard } from './shared/guards/auth-guard.guard';
 
 @NgModule({
   declarations: [AppComponent],
@@ -41,6 +42,7 @@ import {
     ThemeModule.forRoot(),
   ],
   bootstrap: [AppComponent],
+  providers: [AuthGuard]
 })
 export class AppModule {
 }
