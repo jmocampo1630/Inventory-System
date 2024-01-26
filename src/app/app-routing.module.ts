@@ -11,6 +11,7 @@ import {
 import { LoginComponent } from './pages/auth/login/login.component';
 import { AuthGuard } from './shared/guards/auth-guard.guard';
 import { RegisterComponent } from './pages/auth/register/register.component';
+import { AuthComponent } from './pages/auth/auth.component';
 
 export const routes: Routes = [
   {
@@ -21,7 +22,7 @@ export const routes: Routes = [
   },
   {
     path: 'auth',
-    component: NbAuthComponent,
+    component: AuthComponent,
     children: [
       {
         path: '',
